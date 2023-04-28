@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>meine Webseite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!--Bild zwischen style Bereich-->
+
+    <!--kein . vor Body damit alles im Body Bereich die Schriftart bekommt-->
+    <style>
+      body {
+        font-family: "Caveat", cursive;
+        background-color: rgb(7, 6, 28);
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .leviswp {
+        width: 99%;
+      }
+      .headline {
+        color: rgb(4, 4, 142);
+      }
+      .image-container {
+        background-color: rgb(0, 0, 0);
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      a {
+        font-size: 25px;
+        color: orange;
+        text-decoration: none;
+        margin-left: 16px;
+        font-weight: 500;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+      .überschrift {
+        color: rgb(212, 212, 212);
+        font-size: 50px;
+      }
+
+      .text-container-maps {
+        width: 30%;
+        color: white;
+        font-size: 70px;
+        margin-left: 20px;
+      }
+      .maps-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+      }
+
+      .maps-size {
+        border: 0;
+        width: 70%;
+        height: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <h1 class="headline">
+        <span class="überschrift">Levi´s Webseite </span>
+      </h1>
+      <!--<a href link > name-->
+      <div>
+        <a
+          href="https://www.ottochrom.de/oldtimer-mieten/Berlin/Datsun/240z/61c9b1e5-5761-47d4-9c76-6a9c8e32a204"
+          >Mein (Traum)Auto</a
+        >
+        <a
+          href="https://www.kawasaki.de/de/products/Modern_Classic/2023/Z900RS/overview?Uid=0829WA5ZXFxQCVBQWFsKXFhdClAMWAxbXQxYXQteUVwLXlk"
+          >Mein (Traum)Motorrad</a
+        >
+        <a href="https://www.youtube.com/@oldboysbrickchannel3161"
+          >Mein Brick Channel</a
+        >
+      </div>
+    </div>
+
+    <!--div "Container" in dem Fall ein Rahmen, muss aber mit CSS also "CLASS" sichtbar gemacht werden-->
+    <div class="image-container">
+      <img class="leviswp" src="leviswp.jpg" />
+
+      <div class="maps-container">
+        <iframe
+          class="maps-size"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.702855245912!2d8.912544176981012!3d52.285096353594206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ba76a84609156d%3A0x90f4c428215dc809!2sDAA%20Minden!5e0!3m2!1sde!2sde!4v1682665151703!5m2!1sde!2sde"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="text-container-maps">Umschulung bei der DAA</div>
+      </div>
+    </div>
+  </body>
+</html>
